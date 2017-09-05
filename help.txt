@@ -1,0 +1,5 @@
+How to Configure PhpStorm Code Completion to CodeIgniter
+https://github.com/natanfelles/codeigniter-phpstorm
+
+
+
