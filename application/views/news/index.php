@@ -1,4 +1,4 @@
-<h2><?php echo $title; ?></h2>
+<a href="/news/create">Add new item</a>
 
 <?php foreach ($news as $news_item): ?>
 
@@ -6,6 +6,10 @@
     <div class="main">
         <?php echo $news_item['text']; ?>
     </div>
-    <p><a href="<?php echo '/index.php/news/'.$news_item['slug']; ?>">View article</a></p>
+    <p>
+        <a href="<?php echo '/news/'.$news_item['slug']; ?>">View article</a>
+        <a href="<?php echo '/news/delete/'.$news_item['id']; ?>">Delete article</a>
+    </p>
+    <hr/>
 
 <?php endforeach; ?>
