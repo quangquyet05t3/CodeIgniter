@@ -6,30 +6,19 @@
                 <h4>Danh mục sản phẩm</h4>
             </div>
             <div class="menu-left">
+
                 <ul>
-                    <li>
-                        <a href="#" class="a1">Đầm len</a>
-                    </li>
+                    <?php
+                        $i=1;
+                        foreach($types as $type) {
+                            $class = 'a'.$i;
 
-                    <li>
-                        <a href="#" class="a2">Áo len</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="a3">Áo khoác len</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="a4">Sét bộ</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="a5">Đầm hoa</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="a6">Áo sơ mi</a>
-                    </li>
+                            $id = $type['type_id'];
+                            $name = $type['type_name'];
+                            echo '<li><a href="/product/'.$id.'" class="'.$class.'">'.$name.'</a></li>';
+                            $i++;
+                        }
+                    ?>
                 </ul>
             </div>
         </div>
