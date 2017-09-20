@@ -19,114 +19,18 @@
         </div>
     </div>
     <div class="list-item">
+        <?php for($i=1;$i<=8;$i++) { ?>
         <div class="item">
             <div class="img-box" style="background-image: url(images/icon/product1.jpg);">
             </div>
             <h4>Áo khoác len</h4>
             <div class="button">
                 <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
+                <a href="/detail">Chi tiết</a>
             </div>
         </div>
-        <div class="item">
-            <div class="img-box" style="background-image: url(images/icon/product2.jpg);">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-box">
-            </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
+        <?php }?>
+
     </div>
     <div class="product-paging">
         <div>

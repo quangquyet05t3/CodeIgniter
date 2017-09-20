@@ -9,10 +9,10 @@
         <div class="nav-main">
             <ul>
                 <li class="active">
-                    <a href="#">Trang chủ</a>
+                    <a href="/">Trang chủ</a>
                 </li>
                 <li class="show-menu">
-                    <a href="#">Sản phẩm</a>
+                    <a href="/product">Sản phẩm</a>
                     <div class="menu">
                         <a href="#">Đầm len</a>
                         <a href="#">Áo len</a>
@@ -23,10 +23,10 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">Giới thiệu</a>
+                    <a href="/about">Giới thiệu</a>
                 </li>
                 <li>
-                    <a href="#">Liên hệ</a>
+                    <a href="/contact">Liên hệ</a>
                 </li>
             </ul>
         </div>
@@ -36,27 +36,27 @@
     <div class="slide-left">
         <ul>
             <li>
-                <a class="a1">Đầm len</a>
+                <a href="#" class="a1">Đầm len</a>
             </li>
 
             <li>
-                <a class="a2">Áo len</a>
+                <a href="#" class="a2">Áo len</a>
             </li>
 
             <li>
-                <a class="a3">Áo khoác len</a>
+                <a href="#" class="a3">Áo khoác len</a>
             </li>
 
             <li>
-                <a class="a4">Sét bộ</a>
+                <a href="#" class="a4">Sét bộ</a>
             </li>
 
             <li>
-                <a class="a5">Đầm hoa</a>
+                <a href="#" class="a5">Đầm hoa</a>
             </li>
 
             <li>
-                <a class="a6">Áo sơ mi</a>
+                <a href="#" class="a6">Áo sơ mi</a>
             </li>
         </ul>
     </div>

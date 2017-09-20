@@ -2,7 +2,8 @@
 
 
 $route['default_controller'] = 'home';
-
+$route['detail'] = 'detail';
+$route['product'] = 'product';
 
 $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';

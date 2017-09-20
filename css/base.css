@@ -274,26 +274,42 @@
 
 .slide-left .a1 {
     border-left: solid 3px #70ba28;
+    text-decoration: none;
+    color: #000;
 }
 
 .slide-left .a2 {
     border-left: solid 3px #04adf0;
+    text-decoration: none;
+    color: #000;
 }
 
 .slide-left .a3 {
-      border-left: solid 3px #efc73a;
+    border-left: solid 3px #efc73a;
+    text-decoration: none;
+    color: #000;
 }
 
 .slide-left .a4 {
     border-left: solid 3px #f6821f;
+    text-decoration: none;
+    color: #000;
 }
 
 .slide-left .a5 {
     border-left: solid 3px #f03442;
+    text-decoration: none;
+    color: #000;
 }
 
 .slide-left .a6 {
     border-left: solid 3px #f034ca;
+    text-decoration: none;
+    color: #000;
+}
+
+.slide-left a:hover {
+    color: #70ba28;
 }
 
 .slide-main {
@@ -637,26 +653,38 @@
 
 .menu-left .a1 {
     border-left: solid 3px #70ba28;
+    color: #000000;
+    text-decoration: none;
 }
 
 .menu-left .a2 {
     border-left: solid 3px #04adf0;
+    color: #000000;
+    text-decoration: none;
 }
 
 .menu-left .a3 {
     border-left: solid 3px #efc73a;
+    color: #000000;
+    text-decoration: none;
 }
 
 .menu-left .a4 {
     border-left: solid 3px #f6821f;
+    color: #000000;
+    text-decoration: none;
 }
 
 .menu-left .a5 {
     border-left: solid 3px #f03442;
+    color: #000000;
+    text-decoration: none;
 }
 
 .menu-left .a6 {
     border-left: solid 3px #f034ca;
+    color: #000000;
+    text-decoration: none;
 }
 
 .detail {
