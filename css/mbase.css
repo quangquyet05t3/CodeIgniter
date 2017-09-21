@@ -139,7 +139,7 @@
     .item .img-box{
         width: 99%;
         margin: 2px auto;
-        height: 266px;
+        height: 320px;
         border: solid 1px #f0edf4;
         background-image: url("../images/icon/product1.jpg");
         background-position: center center;
@@ -224,8 +224,8 @@
     .img-box {
         margin: 5px;
         width: 350px;
-        height: 280px;
-        background-size: 350px 280px;
+        height: 420px;
+        background-size: 350px 420px;
         margin: 0 auto;
 
     }

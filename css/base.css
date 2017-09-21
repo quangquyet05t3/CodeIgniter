@@ -410,10 +410,10 @@
 .item .img-box{
     margin: 2px;
     width: 266px;
-    height: 266px;
+    height: 320px;
     border: solid 1px #f0edf4;
     background-image: url("../images/icon/product1.jpg");
-    background-size: 266px 266px;
+    background-size: 266px 320px;
 }
 
 .item h4 {
@@ -706,8 +706,8 @@
 .img-box {
     margin: 5px;
     width: 372px;
-    height: 300px;
-    background-size: 372px 300px;
+    height: 420px;
+    background-size: 372px 420px;
 
 }
 

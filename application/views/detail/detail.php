@@ -16,13 +16,13 @@
 
 <div class="detail">
     <div class="img-bg">
-        <div class="img-box" style="background-image: url(<?php echo $image1; ?>);"></div>
+        <div class="img-box" id="img-box" style="background-image: url(<?php echo $image1; ?>);"></div>
         <div class="img-nav">
             <ul>
                 <?php
                     foreach($list_small_image as $item) {
                         ?>
-                        <li>
+                        <li image-url="<?php echo $item ?>">
                             <div class="small-img" style="background-image: url(<?php echo $item ?>);"></div>
                         </li>
                         <?php
@@ -106,3 +106,18 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function(){
+        var first_image = $('.img-nav').children().children()[0];
+        $(first_image).addClass('active');
+        $('.img-nav li').on('click', function(){
+            $('.img-nav').children().children().each(function(){
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+            var image_url = $(this).attr('image-url');
+            $('#img-box').attr('style', 'background-image: url('+image_url+');')
+
+        });
+    });
+</script>

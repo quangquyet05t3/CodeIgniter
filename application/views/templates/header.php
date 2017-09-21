@@ -4,10 +4,10 @@
             <span class="icon"></span>
 
             <div class="d-menu">
-                <a href="home.html">Trang chủ</a>
-                <a href="?p=sp">Sản phẩm</a>
-                <a href="?p=pro">Giới thiệu</a>
-                <a href="?p=lh">Liên hệ</a>
+                <a href="/">Trang chủ</a>
+                <a href="/product">Sản phẩm</a>
+                <a href="/about">Giới thiệu</a>
+                <a href="/contact">Liên hệ</a>
             </div>
         </li>
     </ul>
