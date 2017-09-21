@@ -19,17 +19,24 @@
         </div>
     </div>
     <div class="list-item">
-        <?php for($i=1;$i<=8;$i++) { ?>
-        <div class="item">
-            <div class="img-box" style="background-image: url(images/icon/product1.jpg);">
+        <?php
+        foreach($products as $product) {
+            $image = $path_image.'/'.$product['image1'];
+            $name = $product['product_name'];
+            $id = $product['product_id'];
+            ?>
+            <div class="item">
+                <div class="img-box" style="background-image: url(<?php echo $image; ?>);">
+                </div>
+                <h4><?php echo $name; ?></h4>
+                <div class="button">
+                    <a class="quick-show" href="#">Xem nhanh</a>
+                    <a href="/product/<?php echo $id; ?>">Chi tiết</a>
+                </div>
             </div>
-            <h4>Áo khoác len</h4>
-            <div class="button">
-                <a class="quick-show" href="#">Xem nhanh</a>
-                <a href="/detail">Chi tiết</a>
-            </div>
-        </div>
-        <?php }?>
+            <?php
+        }
+        ?>
 
     </div>
     <div class="product-paging">

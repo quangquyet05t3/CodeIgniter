@@ -30,12 +30,14 @@
                 <li class="show-menu">
                     <a href="/product">Sản phẩm</a>
                     <div class="menu">
-                        <a href="#">Đầm len</a>
-                        <a href="#">Áo len</a>
-                        <a href="#">Áo khoác len</a>
-                        <a href="#">Sét bộ</a>
-                        <a href="#">Đầm hoa</a>
-                        <a href="#">Áo sơ mi</a>
+                        <?php
+                        $i=1;
+                        foreach($types as $type) {
+                            $id = $type['type_id'];
+                            $name = $type['type_name'];
+                            echo '<a href="/product/'.$id.'">'.$name.'</a>';
+                        }
+                        ?>
                     </div>
                 </li>
                 <li>

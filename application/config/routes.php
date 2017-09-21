@@ -2,7 +2,10 @@
 
 
 $route['default_controller'] = 'home';
+
 $route['detail'] = 'detail';
+
+$route['product/(:any)'] = 'product/view/$1';
 $route['product'] = 'product';
 $route['about'] = 'about';
 $route['contact'] = 'contact';

@@ -1,35 +1,45 @@
+<?php
+    $image1 = '../'.$path_image.'/'.$product['image1'];
+    $name = $product['product_name'];
+    $description = $product['description'];
+    $size = $product['size'];
+    $list_small_image = [];
+    for($i=1;$i<=6;$i++){
+        $key = 'image'.$i;
+        if(isset($product[$key])) {
+            $image = '../'.$path_image.'/'.$product[$key];
+            $list_small_image[] = $image;
+        }
+    }
+
+?>
+
 <div class="detail">
     <div class="img-bg">
-        <div class="img-box" style="background-image: url(images/file/large-img.jpg);"></div>
+        <div class="img-box" style="background-image: url(<?php echo $image1; ?>);"></div>
         <div class="img-nav">
             <ul>
-                <li>
-                    <div class="small-img" style="background-image: url(images/file/small-img1.jpg);"></div>
-                </li>
-                <li>
-                    <div class="small-img" style="background-image: url(images/file/small-img2.jpg);"></div>
-                </li>
-                <li>
-                    <div class="small-img" style="background-image: url(images/file/small-img3.jpg);"></div>
-                </li>
-                <li>
-                    <div class="small-img" style="background-image: url(images/file/small-img4.jpg);"></div>
-                </li>
-                <li>
-                    <div class="small-img" style="background-image: url(images/file/small-img1.jpg);"></div>
-                </li>
-                <li>
-                    <div class="small-img" style="background-image: url(images/file/small-img2.jpg);"></div>
-                </li>
+                <?php
+                    foreach($list_small_image as $item) {
+                        ?>
+                        <li>
+                            <div class="small-img" style="background-image: url(<?php echo $item ?>);"></div>
+                        </li>
+                        <?php
+                    }
+                ?>
             </ul>
         </div>
     </div>
     <div class="detail-content">
         <div class="content">
-            <h2>Áo len gân HM</h2>
+            <h2><?php echo $name; ?></h2>
             <div class="description">
                 <p>
-                    Áo khoác len lông xù kiểu Hàn Quốc rất thích hợp để diện trong những ngày thời tiết lạnh, nó có tác dụng giữ ấm cơ thể và giúp trở nên trẻ trung, xinh đẹp hơn với nhiều kiểu dáng khác nhau. Hãy cùng mydeal.vn tham khảo những mẫu áo len xù này cho mình nhé
+                    Size: <?php echo $size; ?>
+                </p>
+                <p>
+                    <?php echo $description; ?>
                 </p>
             </div>
             <div class="share">

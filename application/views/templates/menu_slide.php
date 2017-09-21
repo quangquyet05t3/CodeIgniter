@@ -14,12 +14,14 @@
                 <li class="show-menu">
                     <a href="/product">Sản phẩm</a>
                     <div class="menu">
-                        <a href="#">Đầm len</a>
-                        <a href="#">Áo len</a>
-                        <a href="#">Áo khoác len</a>
-                        <a href="#">Sét bộ</a>
-                        <a href="#">Đầm hoa</a>
-                        <a href="#">Áo sơ mi</a>
+                        <?php
+                        $i=1;
+                        foreach($types as $type) {
+                            $id = $type['type_id'];
+                            $name = $type['type_name'];
+                            echo '<a href="/product/'.$id.'">'.$name.'</a>';
+                        }
+                        ?>
                     </div>
                 </li>
                 <li>
@@ -35,34 +37,21 @@
 <div class="bg-slide">
     <div class="slide-left">
         <ul>
-            <li>
-                <a href="#" class="a1">Đầm len</a>
-            </li>
+            <?php
+            $i=1;
+            foreach($types as $type) {
+                $class = 'a'.$i;
 
-            <li>
-                <a href="#" class="a2">Áo len</a>
-            </li>
-
-            <li>
-                <a href="#" class="a3">Áo khoác len</a>
-            </li>
-
-            <li>
-                <a href="#" class="a4">Sét bộ</a>
-            </li>
-
-            <li>
-                <a href="#" class="a5">Đầm hoa</a>
-            </li>
-
-            <li>
-                <a href="#" class="a6">Áo sơ mi</a>
-            </li>
+                $id = $type['type_id'];
+                $name = $type['type_name'];
+                echo '<li><a href="/product/'.$id.'" class="'.$class.'">'.$name.'</a></li>';
+                $i++;
+            }
+            ?>
         </ul>
     </div>
     <div class="slide-main">
         <div class="slideshow-container" style="display: block">
-
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">

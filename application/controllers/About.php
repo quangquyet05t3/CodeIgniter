@@ -7,12 +7,12 @@ class About extends CI_Controller {
         $this->load->library('parser');
         $this->load->helper('html');
         $this->load->helper('url');
-        $this->load->model('type');
     }
 
     public function index()
     {
-        $dataType['types'] = $this->type->get_type();
+        $this->load->model('type_model');
+        $dataType['types'] = $this->type_model->get_type();
 
         $detailData['product'] = array('1', '2', '3');
         $data = array(
